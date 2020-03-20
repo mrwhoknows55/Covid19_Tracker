@@ -1,0 +1,11 @@
+# Covid19_Tracker
+Android app which tracks Covid-19 Coronavirus Outbreak In India.  
+Live data given by [Ministry of Health and Welfare](https://www.mohfw.gov.in/)  
+API used - [Amod Malviya](https://github.com/amodm/api-covid19-in)
+Currenty just show just simple information in the table.  
+More information will be added soon.  
+
+### Screenshots: 
+
+![Ver 1 image](https://github.com/mrwhoknows55/Covid19_Tracker/new/master/screenshots/1.png)
+
