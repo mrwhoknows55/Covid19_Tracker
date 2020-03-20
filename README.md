@@ -7,5 +7,5 @@ More information will be added soon.
 
 ### Screenshots: 
 
-![Ver 1 image](https://github.com/mrwhoknows55/Covid19_Tracker/new/master/screenshots/1.png)
+![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/1.png)
 
