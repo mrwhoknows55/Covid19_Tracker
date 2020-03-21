@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
 import retrofit2.Call;
@@ -15,6 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MainActivity extends AppCompatActivity {
 
     private ApiHolder apiHolder;
+    private TextView total, active, indian, foreigners, dead, cured;
     private ListView listView;
     private ArrayList<CoronaData.Data.Regional> arrayList = new ArrayList<>();
 
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listView = findViewById(R.id.listView);
+       findViews();
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.rootnet.in/covid19-in/")
@@ -33,6 +35,16 @@ public class MainActivity extends AppCompatActivity {
 
         fetchData();
 
+    }
+
+    private void findViews(){
+        listView = findViewById(R.id.listView);
+        total = findViewById(R.id.totalCasesRes);
+        active = findViewById(R.id.totalActiveCasesRes);
+        indian = findViewById(R.id.indianCasesRes);
+        foreigners = findViewById(R.id.foreignersRes);
+        dead = findViewById(R.id.deadRes);
+        cured = findViewById(R.id.curedRes);
     }
 
     private void fetchData(){
@@ -51,6 +63,18 @@ public class MainActivity extends AppCompatActivity {
                     Log.i("RES Sum fore", String.valueOf(coronaData.getData().getSummary().getForeignCases()));
                     Log.i("RES Sum Cured", String.valueOf(coronaData.getData().getSummary().getCured()));
                     Log.i("RES Sum Death", String.valueOf(coronaData.getData().getSummary().getDeaths()));
+
+                    int activeCases = coronaData.getData().getSummary().getTotalCases() -
+                            (coronaData.getData().getSummary().getDeaths() + coronaData.getData().getSummary().cured);
+
+                    total.setText(String.valueOf(coronaData.getData().getSummary().getTotalCases()));
+                    indian.setText(String.valueOf(coronaData.getData().getSummary().getIndianCases()));
+                    active.setText(String.valueOf(activeCases));
+                    foreigners.setText(String.valueOf(coronaData.getData().getSummary().getForeignCases()));
+                    dead.setText(String.valueOf(coronaData.getData().getSummary().getDeaths()));
+                    cured.setText(String.valueOf(coronaData.getData().getSummary().getCured()));
+
+
 
                     for (CoronaData.Data.Regional regional : coronaData.getData().getRegional()){
                         arrayList.add(regional);

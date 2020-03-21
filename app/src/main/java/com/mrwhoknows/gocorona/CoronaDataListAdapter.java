@@ -49,7 +49,7 @@ class CoronaDataListAdapter extends ArrayAdapter<CoronaData.Data.Regional> {
         TextView curedText = convertView.findViewById(R.id.text5);
 
         location.setText(loc);
-        cases.setText(String.valueOf(indianCases+foreignCases));
+        cases.setText(String.valueOf(indianCases+foreignCases+deaths));
         curedText.setText(String.valueOf(cured));
         deathsText.setText(String.valueOf(deaths));
 

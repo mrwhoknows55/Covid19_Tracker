@@ -7,5 +7,4 @@ public interface ApiHolder {
 
 @GET("stats/latest")
     Call<CoronaData> getData();
-
 }
