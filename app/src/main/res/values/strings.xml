@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Go Corona</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="infoTitleProtect">Protective measures against the Coronavirus (COVID-19)</string>
+    <string name="infoSubProtect">You can protect yourself and help prevent spreading the virus to others if you:</string>
+    <string name="infoBodyProtect">1. Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand sanitizer.
+        \n 2. Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze.
+        \n 3. Avoid close contact (1 meter or 3 feet) with people who are unwell.
+        \n 4. Stay home and self-isolate from others in the household if you feel unwell.\n</string>
+    <string name="infoTitleSymptoms">Symptoms of the Coronavirus (COVID-19)</string>
+    <string name="infoSubSymptoms">People may be sick with the virus for 1 to 14 days before developing symptoms.
+        \nMost people (about 80%) recover from the disease without needing special treatment.
+        \nMore rarely, the disease can be serious and even fatal.
+        \nOlder people, and people with other medical conditions (such as asthma, diabetes, or heart disease), may be more vulnerable to becoming severely ill.
+        \nPeople may experience:</string>
+    <string name="infoBodySymptoms">1. Cough\n2. Fever\n3. Tiredness\n4. Difficulty breathing (severe cases)</string>
+    <string name="helplines">Helplines</string>
+    <string name="infoSubHelp">Helplines provided by Ministry of Health and Welfare, India</string>
+    <string name="aboutTitle">About this app</string>
+    <string name="aboutSub">This app is created by Avadhut Tanugade to provide the information and awareness related to Corona virus (COVID-19)</string>
+    <string name="aboutBody">This Application uses official data provided by Ministry of Health and Welfare, India</string>
 </resources>

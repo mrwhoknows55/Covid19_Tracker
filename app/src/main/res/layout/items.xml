@@ -8,12 +8,14 @@
 
     <TextView
         android:id="@+id/text1"
-        android:layout_width="160dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:padding="2dp"
         android:paddingLeft="8dp"
         android:text="text1"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,10 +23,8 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:orientation="horizontal"
         android:weightSum="3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,27 +34,33 @@
 
         <TextView
             android:id="@+id/text2"
-            android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="text2" />
+            android:padding="2dp"
+            android:text="text2"
+            android:textAlignment="center"
+            android:textSize="16sp" />
 
         <TextView
-            android:textAlignment="center"
             android:id="@+id/text4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="text4" />
+            android:padding="2dp"
+            android:text="text4"
+            android:textAlignment="center"
+            android:textSize="16sp" />
 
         <TextView
-            android:textAlignment="center"
             android:id="@+id/text5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="text5" />
+            android:padding="2dp"
+            android:text="text5"
+            android:textAlignment="center"
+            android:textSize="16sp" />
 
 
     </LinearLayout>

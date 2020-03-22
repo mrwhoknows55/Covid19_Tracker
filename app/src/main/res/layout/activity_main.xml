@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -10,10 +11,13 @@
         android:id="@+id/materialCardView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="10dp"
         app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -41,7 +45,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Total"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/totalActiveCases"
@@ -50,7 +55,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Active"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/indianCases"
@@ -59,8 +65,9 @@
                     android:layout_marginLeft="4dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Indian"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:text="Indians"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
@@ -116,15 +123,17 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Foreigners"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Dead"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:text="Deaths"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -132,7 +141,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Cured"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
@@ -182,11 +192,15 @@
         android:id="@+id/materialCardView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="10dp"
         app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="16dp"
+        app:cardUseCompatPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -203,9 +217,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:gravity="center"
                 android:paddingLeft="8dp"
                 android:text="State"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="17sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -229,24 +245,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:gravity="center_horizontal|left"
                     android:text="Cases"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/text4.1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Death"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:gravity="center_horizontal|left"
+                    android:text="Deaths"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/text5.1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:gravity="center_horizontal|left"
                     android:text="Cured"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
@@ -255,7 +277,6 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
