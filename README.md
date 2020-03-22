@@ -9,12 +9,11 @@ More information will be added soon.
 
 ### Screenshots: 
 
-![ver 2 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/2.png)
+![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/9.png)
+![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/8.png)
 ![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/3.png)
-![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/4.png)
 ![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/5.png)
+![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/4.png)
 ![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/6.png)
 ![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/7.png)
-![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/8.png)
-![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/9.png)
 
