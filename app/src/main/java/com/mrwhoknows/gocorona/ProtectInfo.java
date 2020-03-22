@@ -3,6 +3,8 @@ package com.mrwhoknows.gocorona;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -32,7 +34,9 @@ public class ProtectInfo extends AppCompatActivity {
         ministryLink = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View widget) {
-                Toast.makeText(ProtectInfo.this, "clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://www.mohfw.gov.in/"));
+                startActivity(intent);
             }
 
             @Override
@@ -45,7 +49,8 @@ public class ProtectInfo extends AppCompatActivity {
         helplines1 = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View widget) {
-                Toast.makeText(ProtectInfo.this, "clicked help1", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + Uri.encode("1075")));
+                startActivity(intent);
             }
 
             @Override
@@ -57,7 +62,8 @@ public class ProtectInfo extends AppCompatActivity {
         helplines2 = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View widget) {
-                Toast.makeText(ProtectInfo.this, "clicked help2", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + Uri.encode("+91-11-23978046")));
+                startActivity(intent);
             }
 
             @Override
@@ -69,7 +75,8 @@ public class ProtectInfo extends AppCompatActivity {
         helplines3 = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View widget) {
-                Toast.makeText(ProtectInfo.this, "clicked help3", Toast.LENGTH_SHORT).show();
+               Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"+"ncov2019@gov.in"));
+               startActivity(intent);
             }
 
             @Override
@@ -81,7 +88,8 @@ public class ProtectInfo extends AppCompatActivity {
         helplines4 = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View widget) {
-                Toast.makeText(ProtectInfo.this, "clicked help4", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"+" ncov2019@gmail.com"));
+                startActivity(intent);
             }
 
             @Override
@@ -93,7 +101,9 @@ public class ProtectInfo extends AppCompatActivity {
         myInfo = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View widget) {
-                Toast.makeText(ProtectInfo.this, "clicked my", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://instagram.com/mr_whoknows/"));
+                startActivity(intent);
             }
 
             @Override
@@ -120,11 +130,11 @@ public class ProtectInfo extends AppCompatActivity {
                 case 4:
                     case4();
                     break;
-
             }
         }
 
     }
+
 
     private void case4() {
         title.setText(R.string.aboutTitle);

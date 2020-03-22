@@ -136,6 +136,16 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("view",4);
                 startActivity(intent);
                 break;
+
+            case R.id.share:
+                Log.d(TAG, "onOptionsItemSelected: share");
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT,
+                        "Hey check out Go Corona app at: https://bit.ly/go-corona-app" );
+                sendIntent.setType("text/plain");
+                startActivity(sendIntent);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
