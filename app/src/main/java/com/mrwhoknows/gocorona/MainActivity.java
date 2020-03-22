@@ -11,10 +11,12 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.DatePicker;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.sql.Date;
 import java.util.ArrayList;
 
 import retrofit2.Call;
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
     private ApiHolder apiHolder;
-    private TextView total, active, indian, foreigners, dead, cured;
+    private TextView total, active, indian, foreigners, dead, cured, date;
     private ListView listView;
     private ArrayList<CoronaData.Data.Regional> arrayList = new ArrayList<>();
 
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         foreigners = findViewById(R.id.foreignersRes);
         dead = findViewById(R.id.deadRes);
         cured = findViewById(R.id.curedRes);
+        date = findViewById(R.id.date);
     }
 
     private void fetchData() {
@@ -69,6 +72,12 @@ public class MainActivity extends AppCompatActivity {
                 CoronaData coronaData = response.body();
                 if (coronaData.isSuccess()) {
                     Log.i("RES ref", coronaData.getLastRefreshed());
+                    String yy = coronaData.getLastRefreshed().substring(0,4);
+                    String mm = coronaData.getLastRefreshed().substring(5,7);
+                    String dd = coronaData.getLastRefreshed().substring(8,10);
+                    String time = coronaData.getLastRefreshed().substring(11,16);
+                    String fullDate = dd+"-"+mm+"-"+yy+"  "+time+" hrs";
+                    date.setText("Last updated at: "+ fullDate);
                     Log.i("RES Sum TotalCases", String.valueOf(coronaData.getData().getSummary().getTotalCases()));
                     Log.i("RES Sum Indians", String.valueOf(coronaData.getData().getSummary().getIndianCases()));
                     Log.i("RES Sum fore", String.valueOf(coronaData.getData().getSummary().getForeignCases()));
