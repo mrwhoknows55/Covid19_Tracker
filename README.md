@@ -16,4 +16,5 @@ More information will be added soon.
 ![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/6.png)
 ![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/7.png)
 ![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/8.png)
+![Ver 1 image](https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/9.png)
 
