@@ -20,5 +20,5 @@
     <string name="infoSubHelp">Helplines provided by Ministry of Health and Welfare, India</string>
     <string name="aboutTitle">About this app</string>
     <string name="aboutSub">This app is created by Avadhut Tanugade to provide the information and awareness related to Corona virus (COVID-19)</string>
-    <string name="aboutBody">This Application uses official data provided by Ministry of Health and Welfare, India</string>
+    <string name="aboutBody">It uses official data provided by Ministry of Health and Welfare, India</string>
 </resources>
