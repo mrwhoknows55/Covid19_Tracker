@@ -13,12 +13,12 @@ API used - [Amod Malviya](https://github.com/amodm/api-covid19-in)
 
 ### Screenshots: 
 
-<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/0.png" width="360" height="665">
-<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/1.png" width="360" height="665">
-<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/2.png" width="360" height="665">
-<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/3.png" width="360" height="665">
+<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/0.png" width="360" height="665"> <!-- Force inline -->
+<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/1.png" width="360" height="665"> <!-- Force inline -->
+<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/2.png" width="360" height="665"> <!-- Force inline -->
+<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/3.png" width="360" height="665"> <!-- Force inline -->
 <br>
-<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/4.png" width="360" height="665">
-<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/5.png" width="360" height="665">
-<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/6.png" width="360" height="665">
-<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/7.png" width="360" height="665">
+<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/4.png" width="360" height="665"> <!-- Force inline -->
+<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/5.png" width="360" height="665"> <!-- Force inline -->
+<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/6.png" width="360" height="665"> <!-- Force inline -->
+<img src="https://raw.githubusercontent.com/mrwhoknows55/Covid19_Tracker/master/screenshots/7.png" width="360" height="665"> <!-- Force inline -->
